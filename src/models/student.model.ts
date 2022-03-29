@@ -10,8 +10,8 @@ export class Student extends BaseModel {
     required: true,
     id: true,
     jsonSchema: {
-      pattern: '^SV[0-5][0-9]$',
-      errorMessage: 'Mã sinh viên theo định dạng SV[0-5][0-9]',
+      pattern: '^SV[0-9][0-9]?$',
+      errorMessage: 'Mã sinh viên theo định dạng SV[0-9][0-9]?',
     }
   })
   codeStudent: string;
@@ -19,9 +19,6 @@ export class Student extends BaseModel {
   @property({
     type: 'string',
     required: true,
-    jsonSchema: {
-      errorMessage: 'Giới tính là Nam, Nữ hoặc Khác',
-    }
   })
   gender: string;
 

@@ -4,7 +4,7 @@ import {
   repository
 } from '@loopback/repository';
 import {get, param} from '@loopback/rest';
-import {ValidateStudentAgeInterceptor} from '../interceptors';
+// import {ValidateStudentAgeInterceptor} from '../interceptors';
 import {Course, Student} from '../models';
 import {StudentRepository} from '../repositories';
 import {BaseControllerMixinOptions, ControllerMixin} from './base-model.controller';

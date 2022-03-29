@@ -12,9 +12,6 @@ export class Class extends Entity {
   @property({
     type: 'string',
     required: true,
-    jsonSchema: {
-      pattern: '^[1-4][0-9]{2}$'
-    }
   })
   roomNumber: string;
 
